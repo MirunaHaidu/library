@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:wght@700&family=Roboto:wght@300&display=swap');
+
+:root{
+    --white: #fffbfb;
+    --gray: #e0dcdc;
+    --blue: #62a0b9;
+    --black: #050404;
+    --shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    --bold: 900;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Gentium Book Plus', sans-serif;
+}
+
+
+body{
+    background-color: var(--gray);
+    color: var(--black);
+
+}
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+
+/* --- --- --- --- --- HEADER --- --- --- --- --- --- */
+.header{
+    background-color: var(--blue);
+    height: 5rem;
+    font-weight: var(--bold);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-left: 5rem;
+    font-size: 3rem;
+    box-shadow: var(--shadow);
+}
+
+.logo span{
+    font-size: 1.8rem;
+}
+
+
+/* --- --- --- --- --- MAIN --- --- --- --- --- --- */
+.main{
+    text-align: center;
+}
+
+.btn{
+    border: none;
+    cursor: pointer;
+    background-color: var(--gray);
+    font-size: 1.3em;
+    padding: 0.3em;
+    border-radius: 10px;
+    margin-top: 2rem;
+}
+
+.btn:hover {
+    background-color: #AEBAB1;
+}
+
+.books{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.book-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 20px;
+    gap: 20px;
+    padding: 20px;
+    background-color: var(--white);
+    box-shadow: var(--shadow);
+}
+
+
+
+/* --- --- --- --- --- FOOTER --- --- --- --- --- --- */
+.footer{
+   
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+}
+
