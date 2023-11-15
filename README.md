@@ -1,6 +1,6 @@
 # Auto Stories Library
 
-![Live demo](https://mirunahaidu.github.io/library/)
+Check out the live demo [here](https://mirunahaidu.github.io/library/).
 
 ## Description
 
