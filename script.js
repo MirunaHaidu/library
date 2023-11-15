@@ -94,13 +94,14 @@ const createBookCard = (book) => {
     author.textContent = `${book.author}`;
     pages.textContent = `${book.pages}`;
     removeBtn.textContent = 'Remove';
+    removeBtn.classList.add('btn-red');
 
     if (book.isRead) {
         readBtn.textContent = 'Read';
         readBtn.classList.add('btn-green');
     } else {
         readBtn.textContent = 'Not read';
-        readBtn.classList.add('btn-red');
+        readBtn.classList.add('btn-blue');
     }
 
     bookCard.appendChild(title);
@@ -141,6 +142,12 @@ const removeBookFromLibrary = (title) => {
         myLibrary.splice(index, 1);
     }
 };
+const removeBook = (e) => {
+    const title = e.target.parentNode.parentNode.firstChild.innerHTML.replaceAll('"', '');
+    removeBookFromLibrary(title);
+    updateBooksGrid();
+}
+
 
 
 const toggleRead = (e) => {
